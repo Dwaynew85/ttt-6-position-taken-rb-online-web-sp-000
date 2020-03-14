@@ -1,6 +1,7 @@
-def position_taken?(board, index_number)
-  !(board[index_number] ==  " " || board[index_number] == "")
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == "" || board[index] == nil
+    return false
+  else
+    return true
   end
 end
-
-board = [" ", " ", "0", "", " ", "", " ", "", "X"]
